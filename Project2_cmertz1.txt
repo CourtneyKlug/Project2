@@ -1,0 +1,6 @@
+This panda3d project allows you to take a gander at some planets, 
+a space station, and a player spaceship, all of which 
+are located in an unknown part of the universe. This time however, you can
+see the x y and z circles, a gathering of drones over a planet, and drones that make
+the seams of a baseball over a different planet. The drones are our friend by the way. 
+This is part 2 of the Space Jam project.
