@@ -34,9 +34,9 @@ class MyApp(ShowBase):
         parent = loader.loadModel("./Assets/DroneDefender/Camera/sphere.egg")
         texture = loader.loadTexture("./Assets/DroneDefender/Camera/sphere1_flat.jpg")
         parent.setTexture(texture, 1)
-        defensePaths.Camera(render, parent, 'x-axis', 40, (255, 0, 0, 1.0), 'xy')
-        defensePaths.Camera(render, parent, 'y-axis', 37, (0, 255, 0, 1.0), 'yz')
-        defensePaths.Camera(render, parent, 'z-axis', 34, (0, 0, 255, 1.0), 'xz')
+        defensePaths.Camera(render, parent, 'x-axis', 40, (255, 0, 0, 1.0), 'xy-circle')
+        defensePaths.Camera(render, parent, 'y-axis', 37, (0, 255, 0, 1.0), 'yz-circle')
+        defensePaths.Camera(render, parent, 'z-axis', 34, (0, 0, 255, 1.0), 'xz-circle')
 
     def DrawBaseballSeams(self, centralobject, droneName, step, numSeams, radius = 1): 
         unitVec = defensePaths.BaseballSeams (step, numSeams, B = 0.4)

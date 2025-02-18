@@ -6,11 +6,11 @@ def Camera(render, parent, name, radius, color, axis):
     for i in range(100):
         theta = x
         placeholder = render.attachNewNode(name)
-        if axis == 'xy':
+        if axis == 'xy-circle':
             placeholder.setPos(radius * math.cos(theta), radius * math.sin(theta), 0.0)
-        elif axis == 'yz':
+        elif axis == 'yz-circle':
             placeholder.setPos(0.0, radius * math.sin(theta), radius * math.cos(theta))
-        elif axis == 'xz':
+        elif axis == 'xz-circle':
             placeholder.setPos(radius * math.cos(theta), 0.0, radius * math.sin(theta))
         placeholder.setColor(*color)
         parent.instanceTo(placeholder)
